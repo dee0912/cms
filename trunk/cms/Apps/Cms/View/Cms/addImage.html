@@ -1,0 +1,31 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div>
+            <h3>测试文件上传到文件服务器</h3>
+           <if condition="$img neq ''"> <img src="{$img}" /></if>
+            <form method="post" action="__URL__/addImage"  enctype="multipart/form-data">
+              <div id="center">
+                  <table>
+                       <tr>
+                          <td>图片</td>
+                          <td><input type="file" name="pic_url" multiple="true"></td>
+                       </tr>
+                      <tr>
+                          <tr><td></td><td><input type="submit" value="保存"></td></tr>
+                      </tr>
+                  </table>
+             </div>
+
+ </form>
+        </div>
+    </body>
+</html>
